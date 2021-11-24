@@ -1,0 +1,267 @@
+html {
+	position: relative;
+}
+
+body {
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+
+.navbar {
+	border: none;
+	box-shadow: 1px 1px 8px rgba(0,0,0,0.5);
+}
+
+.navbar .nav {
+	text-align: center;
+}
+
+.jumbotron {
+	background-image: url('../img/marc-mintel-1iYTusNPlSk-unsplash.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	margin-bottom: 0;
+	overflow: hidden;
+}
+
+.jumbotron h1, .jumbotron p {
+	color: white;
+	text-shadow: 2px 2px 4px #000;
+}
+
+.jumbotron img {
+	width: 200px;
+	border: 2px solid #eaeaea;
+	box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+}
+
+.btn-wrapper {
+	position: static;
+	padding: 20px;
+	margin-top: 20px;
+}
+
+.btn-github {
+	width: 140px;
+	height: 40px;
+	padding: 8px 12px;
+	font-size: 18px;
+	font-family: sans-serif;
+	text-decoration: none;
+	color: #fff;
+	border: 2px solid #fff;
+	letter-spacing: 2px;
+	text-align: center;
+	position: relative;
+	transition: all .35s;
+}
+
+.btn-github span {
+	position: relative;
+	z-index: 2;
+}
+
+.btn-github:after {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background: #fff;
+	transition: all .35s;
+}
+
+.btn-github:hover {
+	color: #34495e;
+	text-decoration: none;
+}
+
+.btn-github:hover:after {
+	width: 100%;
+}
+
+.fa-github {
+	margin-right: 5px;
+}
+
+hr {
+	width: 250px;
+	border-top: 3px solid #999;
+}
+
+section {
+	padding-top: 30px;
+	min-height: 600px;
+}
+
+.about {
+	min-height: 400px
+}
+
+.about .row {
+	margin-top: 20px;
+}
+
+.pKiri, .pKanan {
+	opacity: 0;
+	transform: translate(-50px, 0);
+	transition: 1s;
+}
+
+.pKanan {
+	transform: translate(50px, 0);
+}
+
+.pKiri.pMuncul, .pKanan.pMuncul {
+	opacity: 1;
+	transform: translate(0,0);
+}
+
+.portfolio {
+	background-color: #eee;
+	min-height: 800px;
+	padding-top: 50px;
+}
+
+.portfolio .thumbnail {
+	opacity: 0;
+	transform: translate(0, -40px);
+	transition: .5s;
+}
+
+.portfolio .thumbnail.muncul {
+	opacity: 1;
+	transform: translate(0,0);
+}
+
+.blog {
+	padding-bottom: 50px;
+}
+
+.card-img-top {
+	width: 259px;
+}
+
+.blog .card-title {
+	font-size: medium;
+	font-weight: bold;
+}
+
+.blog-container {
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+}
+
+.blog .btn {
+	margin-bottom: 20px;
+}
+
+.team {
+	background-color: #eee;
+	min-height: 800px;
+	padding-top: 50px;
+}
+
+.profile-container {
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+}
+
+.card,
+.card .img-area {
+	background: #eee;
+	box-shadow: -2px -2px 7px #ffffff,
+	        	2px 2px 5px #ceced1;
+}
+
+.card {
+	position: relative;
+	width: 25%;
+	margin: 20px 20px;
+	padding: 30px;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	float: left;
+}
+
+.card .img-area {
+	height: 180px;
+	width: 180px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.img-area .inner-area {
+	height: calc(100% - 15px);
+	width: calc(100% - 15px);
+	border-radius: 50%;
+}
+
+.inner-area img {
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.card .name {
+	font-size: 22px;
+	font-weight: 500;
+	color: #2c3e50;
+	margin: 20px 0 25px 0;
+}
+
+.card .about-team {	
+	text-align: left;
+	color: #34495e;
+	font-weight: 400px;
+	font-size: 15px;
+}
+
+.about-icon {
+	text-align: center;
+}
+
+.contact {
+	min-height: 800px;
+	padding-top: 50px;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+	background-color: #34495e;
+	padding-top: 20px;
+	box-shadow: 1px 1px 8px rgba(0,0,0,0.5);
+}
+
+footer p {
+	color: #ecf0f1;
+	font-size: 0.9em;
+}
+
+footer p i {
+	color: salmon;
+}
+
+@media all and (max-width: 670px) {
+
+	.card .img-area {
+		height: 250px;
+		width: 250px;
+		border-radius: 50%;
+	}
+
+	.card {
+		width: 100%;
+	}
+}
